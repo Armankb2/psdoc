@@ -1,0 +1,63 @@
+site_name: Placement Syndicate
+site_description: Technical documentation for the Placement Syndicate microservices and AI-powered resume feedback platform
+repo_url: https://github.com/Armankb2/Placement-Syndicate-mini
+repo_name: Armankb2/Placement-Syndicate-mini
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - Getting started: getting-started.md
+  - Concepts:
+      - Architecture: architecture.md
+      - Data & messaging: data-messaging.md
+      - Hybrid search: hybrid-search.md
+      - Resume feedback: resume-feedback.md
+  - Reference:
+      - Technology stack: technology-stack.md
+      - Glossary: glossary.md
+  - Developer:
+      - API workflow: api-workflow.md
+      - Operations: operations.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+strict: true
